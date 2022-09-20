@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+a img {
+    height: 10px;
+    width: 10px;
+}
+#contenedorcarrusel{
+    border: 5px solid black;
+    height: 200px;
+    overflow: hidden; /*para superponer los elementos en el alto que digo*/
+}
+
+.itemcarrusel {
+    border:  1px solid black;
+    height: 200px;
+    position: relative; /*posicion de donde deberia estar antes de position absolute*/
+}
+
+.tarjetacarrusel {
+    height: 100%;
+    text-align: center;
+}
+.tarjetacarrusel img {
+    height: 100%;
+   
+}
+
+.flechascarrusel {
+    height: 100% ;
+    width: 100%;
+    position: absolute; /*posicion desde cero */
+    top: 0; /*movimiento desde arriba , muevo desde arriba*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#contenedorpuntos{
+    background-color: rgba(128, 128, 128, 0.364);
+    display: flex;
+    justify-content: space-around;
+
+}
+#contenedorpuntos a{
+    font-size: 3em;
+    font-style: none;
+    color: black;
+}
+
+
+
